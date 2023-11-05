@@ -61,5 +61,9 @@ for data in dataset:
     table_time.add_row([data[1], data[2], time_1, time_2])
     table_memory.add_row([data[1], data[2], memory_1, memory_2])
 
-print(table_time)
-print(table_memory)
+with open("output.txt", "w") as file:
+    file.write("Execution Time Comparison\n")
+    file.write(str(table_time))
+    file.write("\n\n\n")
+    file.write("Memory Usage Comparison\n")
+    file.write(str(table_memory))
