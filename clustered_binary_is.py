@@ -27,7 +27,8 @@ sorted_list = clustered_binary_insertion_sort(a_list)
 print(sorted_list)
 
 '''
-Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+---------------------------------------------------
+### Penjelasan Algoritma Clustered Binary Insertion Sort
 
 - Inisialisasi (line 25)
 a_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -46,5 +47,63 @@ berada pada posisi yang tepat ke kanan sebanyak satu kali.
 
 - Insertion (line 20)
 Setelah dilakukan shifting, elemen yang sedang diiterasi dimasukkan ke posisi yang tepat.
+
+---------------------------------------------------
+### Contoh Penerapan Algoritma Clustered Binary Insertion Sort
+
+Input = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+
+Iteration 1:
+    Key: 1
+    Binary Search: [1]
+    Swap: [1, 3]
+    Result: [1, 3, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+Iteration 2:
+    Key: 4
+    Binary Search: [1, 3, 4]
+    Swap: [1, 3, 1, 4]
+    Result: [1, 1, 3, 4, 5, 9, 2, 6, 5, 3, 5]
+Iteration 3:
+    Key: 1
+    Binary Search: [1, 1, 3, 4]
+    Swap: [1, 1, 3, 4]
+    Result: [1, 1, 3, 4, 5, 9, 2, 6, 5, 3, 5]
+Iteration 4:
+    Key: 5
+    Binary Search: [1, 1, 3, 4, 5]
+    Swap: [1, 1, 3, 4, 5]
+    Result: [1, 1, 3, 4, 5, 9, 2, 6, 5, 3, 5]
+Iteration 5:
+    Key: 9
+    Binary Search: [1, 1, 3, 4, 5, 9]
+    Swap: [1, 1, 3, 4, 5, 9]
+    Result: [1, 1, 3, 4, 5, 9, 2, 6, 5, 3, 5]
+Iteration 6:
+    Key: 2
+    Binary Search: [1, 1, 3, 4, 5, 9, 2]
+    Swap: [1, 1, 2, 3, 4, 5, 9]
+    Result: [1, 1, 2, 3, 4, 5, 9, 6, 5, 3, 5]
+Iteration 7:
+    Key: 6
+    Binary Search: [1, 1, 2, 3, 4, 5, 9, 6]
+    Swap: [1, 1, 2, 3, 4, 5, 6, 9]
+    Result: [1, 1, 2, 3, 4, 5, 6, 9, 5, 3, 5]
+Iteration 8:
+    Key: 5
+    Binary Search: [1, 1, 2, 3, 4, 5, 6, 9, 5]
+    Swap: [1, 1, 2, 3, 4, 5, 5, 6, 9]
+    Result: [1, 1, 2, 3, 4, 5, 5, 6, 9, 3, 5]
+Iteration 9:
+    Key: 3
+    Binary Search: [1, 1, 2, 3, 4, 5, 5, 6, 9, 3]
+    Swap: [1, 1, 2, 3, 3, 4, 5, 5, 6, 9]
+    Result: [1, 1, 2, 3, 3, 4, 5, 5, 6, 9, 5]
+Iteration 10:
+    Key: 5
+    Binary Search: [1, 1, 2, 3, 3, 4, 5, 5, 6, 9, 5]
+    Swap: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+    Result: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+
+Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 
 '''
