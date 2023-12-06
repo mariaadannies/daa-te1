@@ -8,7 +8,7 @@ To compare the two sorting algorithms, you can use the provided Python scripts:
 
 - clustered_binary_is.py: Contains the Clustered Binary Insertion Sort implementation.
 - randomized_quick_sort.py: Contains the Randomized Quick Sort implementation.
-- random_dataset.py: This script generate dataset needed for compaing the two algorithms.
+- random_dataset.py: This script generates the dataset needed for comparing the two algorithms.
 - profiler.py: This script performs the sorting algorithm comparison and measures execution time and memory usage.
 
 ## Results
